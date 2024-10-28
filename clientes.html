@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SICAM - Inicio</title>
+    <meta name="description" content="Bienvenido a SICAM, donde ofrecemos soluciones mecánicas y de filtración.">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilo para el fondo */
+        #inicio {
+            position: relative;
+            background-image: url('./img/MCS SOLD.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            height: 100vh;
+            padding-bottom: 100px;
+        }
+
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 100px; /* Ajusta el tamaño según necesites */
+            z-index: 10; /* Asegura que el logo esté por encima del fondo */
+        }
+
+        .overlay {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%); /* Centra horizontalmente */
+            background: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+            padding: 30px; /* Mayor espaciado */
+            border-radius: 10px; /* Bordes redondeados */
+            max-width: 600px; /* Ancho máximo mayor */
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Sombra para el efecto de profundidad */
+        }
+
+        .welcome-box {
+            top: 10%; /* Ajustar posición vertical del cuadro de bienvenida (más arriba) */
+        }
+
+        .testimonials-box {
+            top: 30%; /* Ajustar posición vertical del cuadro de testimonios (más arriba) */
+            margin-top: 20px; /* Espacio adicional */
+            margin-bottom: 100px; /* Espacio adicional entre el cuadro de testimonios y el footer */
+            background: white; /* Fondo blanco para el cuadro de testimonios */
+            color: black; /* Color del texto */
+            border-radius: 10px; /* Bordes redondeados */
+            padding: 20px; /* Espaciado interno */
+            position: relative; /* Necesario para el chat-style */
+        }
+
+        .chat-bubble {
+            position: relative;
+            display: inline-block;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 10px;
+            background: #e9ecef; /* Color de fondo del chat */
+            max-width: 80%; /* Ancho máximo del mensaje */
+            text-align: left; /* Alinear texto a la izquierda */
+        }
+
+        .chat-bubble:before {
+            content: '';
+            position: absolute;
+            top: 10px; /* Ajuste vertical de la punta */
+            left: -15px; /* Ajuste horizontal de la punta */
+            border-width: 8px;
+            border-style: solid;
+            border-color: transparent #e9ecef transparent transparent; /* Color de la punta */
+        }
+    </style>
+</head>
+<body>
+    <section id="inicio">
+        <img src="./img/SICAM LOGO.png" alt="Logo SICAM" class="logo"> <!-- Logo de la empresa -->
+
+        <div class="overlay welcome-box">
+            <h2>Bienvenido a SICAM</h2>
+            <p>¡Somos tu destino confiable para servicios mecánicos de calidad! 💪 Con más de 10 años de experiencia, nos enorgullece ofrecer soluciones eficaces y eficientes para tus necesidades.</p>
+        </div>
+
+        <div class="overlay testimonials-box">
+            <h3>Opiniones de Nuestros Clientes</h3>
+            <div class="chat-bubble">
+                "El servicio fue excepcional, cumplieron con todas mis expectativas." - Ing. Juan Pérez ACONTIMBER
+            </div>
+            <div class="chat-bubble">
+                "Gracias a SICAM, nuestro equipo funciona mejor que nunca." - Lic. María López FRESA
+            </div>
+            <div class="chat-bubble">
+                "Son muy profesionales y los resultados hablan por sí mismos." - Ing. Carlos Sánchez ESTABLECIMIENTO LAS MARIAS 
+            </div>
+            <div class="chat-bubble">
+                "Recomiendo SICAM a cualquiera que necesite mantenimiento industrial." - Ing. Ana Torres GRUPO TAPEBICUA
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <h4>CONTACTO</h4>
+        <p>Teléfono: +123 456 789</p>
+        <p>Email: contacto@sicam.com</p>
+        <p>Dirección: RUTA 14 KM 743, VIRASORO CTES, ARGENTINA</p>
+        <p>&copy; 2014 SICAM. Todos los derechos reservados.</p>
+    </footer>
+
+   
+</body>
+</html>

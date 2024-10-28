@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SICAM - Soluciones mecánicas y de filtración.">
+    <title>SICAM - E-commerce</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url('./img/MCS SOLD.jpg'); /* Establecer fondo de pantalla */
+            background-size: cover;
+            background-position: center;
+            height: 100vh; /* Ocupa toda la altura de la ventana */
+            margin: 0; /* Eliminar márgenes del body */
+        }
+
+        /* Contenedor de las ventanas flotantes */
+        .carousel-container {
+            display: flex; /* Flexbox para alinear horizontalmente */
+            justify-content: center; /* Centrar horizontalmente */
+            align-items: center; /* Centrar verticalmente */
+            height: 100%; /* Asegura que ocupe toda la altura */
+            position: relative; /* Asegura que las ventanas se ubiquen en el medio */
+            z-index: 1; /* Para estar por encima del fondo */
+        }
+
+        .carousel-box {
+            background: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente */
+            padding: 30px; /* Espaciado interno */
+            border-radius: 10px; /* Bordes redondeados */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Sombra para el efecto de profundidad */
+            width: 250px; /* Ancho de las ventanas */
+            height: 200px; /* Alto de las ventanas */
+            margin: 10px; /* Espaciado entre ventanas */
+            text-align: center; /* Centra el texto */
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-dark text-white text-center py-3">
+        <div>
+            <img src="./img/SICAM LOGO.png" alt="" class="img-fluid">
+        </div>
+        <h1>Soluciones Industriales Carlos Alberto Maidana</h1>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link text-white" href="inicio.html">Sobre Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="sobre_nosotros.html">Clientes</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tienda.html">Tienda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Ventanas flotantes para el carrusel -->
+    <div class="carousel-container">
+        <div class="carousel-box">
+            <h4>Carrusel de fondos de trabajo realizados</h4>
+            <p>Descripción breve del trabajo 1.</p>
+        </div>
+        <div class="carousel-box">
+            <h4>Carrusel de fondos de trabajo realizados</h4>
+            <p>Descripción breve del trabajo 2.</p>
+        </div>
+        <div class="carousel-box">
+            <h4>Carrusel de fondos de trabajo realizados</h4>
+            <p>Descripción breve del trabajo 3.</p>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <h4>CONTACTO</h4>
+        <p>Teléfono: +123 456 789</p>
+        <p>Email: contacto@sicam.com</p>
+        <p>Dirección: RUTA 14 KM 743, VIRASORO CTES, ARGENTINA</p>
+        <p>&copy; 2014 SICAM. Todos los derechos reservados.</p>
+    </footer>
+
+    
+</body>
+</html>

@@ -1,0 +1,58 @@
+/* Estilo básico para el cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+}
+body {
+    background: linear-gradient(135deg, #4b4b4b, #1c1c1c);
+    color: white; /* Color de texto para que contraste */
+    font-family: Arial, sans-serif; /* Fuente general */
+    height: 100vh; /* Para ocupar toda la altura de la ventana */
+    margin: 0; /* Elimina márgenes por defecto */
+}
+/* Estilo para los encabezados */
+h2, h3 {
+    color: #333;
+}
+
+/* Estilo para el footer */
+footer {
+    text-align: center;
+    color: white;
+}
+
+/* Espaciado en secciones */
+section {
+    padding: 60px 0;
+}
+
+/* Estilo de lista */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Estilo para imágenes fluidas */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo de tarjetas */
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo para la sección de inicio con fondo */
+#inicio {
+    background-image: url('img/tu_imagen_de_fondo.jpg'); /* Cambia el nombre del archivo por el de tu imagen */
+    background-size: cover; /* Cubre todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    color: white; /* Cambia el color del texto para que sea legible sobre el fondo */
+    padding: 100px 0; /* Ajusta el espaciado según sea necesario */
+}
